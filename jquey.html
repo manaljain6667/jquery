@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<style type="text/css">
+		#circle{
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			background-color:  green;
+			margin: 10px;
+		}
+		.square{
+			height: 150px;
+			width: 150px;
+			background-color: red;
+			margin: 10px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	
+</head>
+<body>
+	<h1>Hii there</h1>
+	<div id="circle"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<!-- <script type="text/javascript">
+		if (typeof jQuery=="undefined") {
+			alert("jquery is not installed");
+		}
+		else
+		{
+			alert("jquery is installed correctly")
+		}
+	</script> -->
+	<script type="text/javascript">
+		$('#circle').click(function(){
+			alert("circle was clicked");
+		});
+	</script>
+
+</body>
+</html>

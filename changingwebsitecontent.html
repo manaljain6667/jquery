@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice</title>
+	<style type="text/css">
+		#circle{
+			border-radius: 50%;
+			height: 150px;
+			width: 150px;
+			background-color: green;
+		}
+		.square{
+			
+			height: 150px;
+			width: 150px;
+			background-color: red;
+			margin: 10px
+		}
+	</style>
+	<script type="text/javascript" 
+	            src="jquery-3.3.1.min.js">
+		
+	</script>
+</head>
+<body>
+	
+
+<div id="circle"></div>
+<div class="square"></div>
+<div class="square"></div>
+<!-- <iframe src="http://www.codestars.com"></iframe> -->
+<p>this is some text</p>
+<script type="text/javascript">
+	// $('#circle').click(function()
+	// 	{
+
+	// 		// $("iframe").attr("src","this text is changed");this was to change the attribute of iframe
+	// 		// $("#circle").css("background-color","red");
+	// 		$("#circle").css("display","none");
+	// 		alert("are you sure");
+	// 		// to chnge the content of css elements
+
+
+	// 	});
+	// $('.square').click(function()
+	// 	{
+
+	// 		// $("iframe").attr("src","this text is changed");this was to change the attribute of iframe
+	// 		// $("#circle").css("background-color","red");
+	// 		$(".square").css("display","none");
+	// 		alert("are you sure");
+	// 		// to chnge the content of css elements
+
+
+	// 	});       or
+	$('div').click(function()
+		{
+
+			// $("iframe").attr("src","this text is changed");this was to change the attribute of iframe
+			// $("#circle").css("background-color","red");
+			$(this).css("display","none");
+
+                 // thus "this" is very powerful as it allows to select component at a time
+              //if( $(this).attr("id"))=="circle")
+              {
+              	alert("you clicked on a circle");
+              }
+              else
+              	alert("you clicked on a square");
+
+			alert("are you sure");
+			// to chnge the content of css elements
+
+
+		});
+
+
+	// alert($("body").css("width"));
+</script>
+</body>
+</html>

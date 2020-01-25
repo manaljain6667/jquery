@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practice</title>
+	<style type="text/css">
+		#in{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" 
+	            src="jquery-3.3.1.min.js">
+
+
+		
+	</script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+	<button id="toggle">press</button>
+
+<p id="out">this is some text to hide</p>
+<p id="in">this text was hidden</p>
+<script type="text/javascript">
+	 $('#toggle').click(function()
+	 	{
+	 		if ($("#out").css("display")=="none") {
+	 			$("#out").fadein();
+	 		}
+	 		else
+	 		{
+	 			$("#out").fadeOut();
+	 		}
+                // or $(this).hide();
+                // ****same is fadein ****
+
+
+	 	});
+
+	// *********toggle is a  attribute which if text is hidden then it will display it and if displaying then it will hide it***********
+
+	// alert($("body").css("width"));
+	// **********
+	// toggle 
+	// *******
+
+
+</script>
+</body>
+</html>

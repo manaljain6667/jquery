@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery ui section</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js">	
+	</script>
+	<script src="jquery-ui/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+	<style type="text/css">
+		#resizable{
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+		}
+		#also{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="draggable">Drag me</div>
+	<div  style="width: 400px;height: 400px;background-color: yellow">
+		<span>I am stuck within this square</span>
+	</div>
+	<div id="resizable">i am resizeable</div>
+	<div id="also"></div>
+	
+	<script type="text/javascript">
+		$("#draggable").draggable({ axis: "x"});
+		$("span").draggable(({ containment: "parent" }));
+         $( "#resizable" ).resizable({
+         	grid:50,
+         	alsoResize:"#also",
+         	// resize:function(event,ui){
+         	// 	($("#resizable").width()>300){
+         	// 		alert("big enough");
+         	// 	}
+         	// }
+         });
+		$("#also").resizable();
+	</script>
+	</body>
+</html>
